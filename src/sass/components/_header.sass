@@ -1,0 +1,48 @@
+.header
+    grid-column: 1 / -1
+    display: contents
+    &__main
+        grid-column: 1 / -1
+        background: $color-transparent-blue
+        display: grid
+        padding: 13rem 0
+        grid-template-columns: subgrid
+        align-items: center
+        position: relative
+        z-index: 2
+    &__img
+        grid-column: 8 / 14
+        justify-self: end
+        min-width: 35rem
+    &__h1
+        margin-bottom: 1.6rem
+    &__figure-blue
+        grid-column: 14 / 15
+        justify-self: end
+        height: 33.6rem
+        width: 4rem
+    &__figure-green
+        grid-column: 1 / 2
+        justify-self: start
+        height: 18rem
+        width: 5.2rem
+        align-self: end
+        transform: translateY(18rem)
+    &__ellipse-right
+        background: $gradient-radial-yellow
+        top: 0
+        right: 5%
+    &__ellipse-left
+        position: absolute
+        background: $gradient-radial-pink
+        top: 3%
+        left: -5%
+      
+    
+
+
+
+       
+
+
+

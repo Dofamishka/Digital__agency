@@ -1,0 +1,39 @@
+@import "../abstracts/_mixins"
+@import "../abstracts/_variable"
+
+html
+    font-size: 62.5%
+    @include respond($breakpoint: big-screen)
+        font-size: 80%
+    @include respond($breakpoint: tab-land)
+        font-size: 45%
+    @include respond($breakpoint: tab-port)
+        font-size: 45%
+    @include respond($breakpoint: phone)
+        font-size: 43%
+
+body
+    @include text (1.6rem, 400, 170%)
+    font-family: "poppins"
+    color: $color-dark
+    background: $color-white
+    & a
+        color: $color-dark
+
+.wrapper
+    display: grid
+    grid-template-columns: minmax(6rem, 1fr) [center-start] repeat(12, minmax(min-content, 9rem)) [center-end] minmax(6rem, 1fr) [full-end]
+    grid-auto-rows: min-content
+    gap: 0 1rem
+    margin-bottom: 4rem
+    @include respond($breakpoint: tab-port)
+        grid-template-columns: minmax(3rem, 1fr) [center-start] repeat(6, minmax(min-content, 12rem)) [center-end] minmax(3rem, 1fr) [full-end]
+.main
+    display: grid
+    grid-column: 1 / -1
+    grid-template-columns: subgrid
+
+    
+
+
+    

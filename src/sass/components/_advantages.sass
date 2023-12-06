@@ -1,0 +1,27 @@
+.advantages
+    grid-column: center-start / center-end
+    padding: 4.3rem 0
+    &__wrapper
+        grid-column: 1 / -1
+        display: grid
+        grid-template-columns: subgrid
+        border-bottom: 0.7px solid $color-light-gray
+    &__item
+        gap: 0 1.6rem
+        &:not(:last-child)
+            margin-right: 2.5rem 
+    &__img
+        height: 8.3rem
+        width: 8.3rem
+        padding: 2.5rem 2rem
+        border-radius: 2rem
+        &-violet 
+            background: $color-light-violet
+        &-green 
+            background: $color-light-green
+        &-blue 
+            background: $color-light-blue
+        &-orange 
+            background: $color-light-orange
+    &__text
+        color: $color-light-gray
