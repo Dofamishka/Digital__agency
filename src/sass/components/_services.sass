@@ -1,0 +1,65 @@
+.services
+    display: grid
+    grid-template-columns: subgrid
+    grid-column: 1 / -1
+    &__wrapper
+        display: grid
+        grid-column: 1 / -1
+        grid-template-columns: subgrid
+        padding: 11.5rem 0
+        text-align: center
+        position: relative
+    &__mainTitle
+        grid-column: 2 / 14
+        margin-bottom: 3rem
+    &__subtitle
+        font-size: 1.8rem
+        color: $color-gray
+        line-height: 175%
+        grid-column: 4 / 12
+    &__cards
+        padding: 16rem 0
+    &__card
+        &:not(:last-child)
+            margin-bottom: 19.9rem
+        &-title 
+            margin-bottom: 5.5rem
+    &__text
+        color: $color-gray
+        max-width: 47rem
+        &-right
+            margin-right: 0
+    &__icon
+        width: 5.8rem
+        height: 5.8rem
+        padding: 1.6rem
+        &-green
+            background: $color-green
+    .cardLinear
+        justify-self: start
+        gap: 0 2.5rem
+        margin-bottom: 4.5rem
+        &__title
+            line-height: normal
+    &__ellipse-1 
+        background: $gradient-radial-violet
+        right: 0
+        z-index: 1
+        top: 50rem
+        transform: translateX(50%)
+
+    &__ellipse-2
+        background: $gradient-radial-dark_yellow
+        left: 0
+        top: 110rem
+    
+    &__ellipse-3
+        background: $gradient-radial-violet
+        right: 0
+        top: 180rem
+        transform: translateX(5%)
+
+        
+
+        
+

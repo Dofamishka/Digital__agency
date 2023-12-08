@@ -22,10 +22,11 @@ body
 
 .wrapper
     display: grid
-    grid-template-columns: minmax(6rem, 1fr) [center-start] repeat(12, minmax(min-content, 9rem)) [center-end] minmax(6rem, 1fr) [full-end]
+    grid-template-columns: minmax(9rem, 1fr) [center-start] repeat(12, minmax(min-content, 9rem)) [center-end] minmax(9rem, 1fr) [full-end]
     grid-auto-rows: min-content
     gap: 0 1rem
     margin-bottom: 4rem
+
     @include respond($breakpoint: tab-port)
         grid-template-columns: minmax(3rem, 1fr) [center-start] repeat(6, minmax(min-content, 12rem)) [center-end] minmax(3rem, 1fr) [full-end]
 .main

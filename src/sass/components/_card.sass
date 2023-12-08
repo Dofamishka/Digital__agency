@@ -1,6 +1,6 @@
 .cardLinear
     display: grid
-    grid-template-columns: repeat(2, max-content)
+    grid-template-columns: min-content 1fr
     grid-template-rows: repeat(2, min-content)
     align-items: center
     justify-content: space-between
@@ -10,6 +10,9 @@
         display: inline-flex
         justify-content: center
         align-items: center
+        &-circle
+            border-radius: 50% 
+            
     &__title
         grid-column: 2 / -1
         align-self: end
@@ -17,3 +20,37 @@
         color: $color-light-gray
         font-size: 1.5rem
         align-self: start
+.cardColumn
+    display: grid
+    grid-template-columns: repeat(12, minmax(min-content, 1fr))
+    gap: 0 1rem
+    grid-column: 2 / 14
+    align-items: center
+    grid-auto-flow: row
+    &__card
+        grid-column: 1 / 13
+        display: grid
+        grid-template-columns: subgrid
+    &__item
+        display: flex
+        flex-direction: column
+        text-align: left
+        justify-content: center
+        grid-column: span 5
+        &-end 
+            justify-content: flex-end
+    &__img
+        min-width: 40rem 
+        grid-column: span 7
+        display: flex
+        justify-content: flex-end
+        &-left 
+            justify-content: flex-start
+.cardCenter
+    flex-direction: column
+    text-align: center
+    &-gray
+        background-color: $color-transparent-gray
+    &-blue 
+        background-color: $color-dark-blue
+
